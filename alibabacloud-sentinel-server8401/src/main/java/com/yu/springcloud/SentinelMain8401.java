@@ -2,18 +2,15 @@ package com.yu.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * @author 小鱼
  * @version 1.0
- * @date 2021/8/4 5:16 下午
- * @EnableDiscoveryClient：开启服务注册
+ * @date 2021/8/6 4:23 下午
  */
 @SpringBootApplication
-@EnableDiscoveryClient
-public class ConsumerMain83 {
+public class SentinelMain8401 {
     public static void main(String[] args) {
-        SpringApplication.run(ConsumerMain83.class);
+        SpringApplication.run(SentinelMain8401.class);
     }
 }
