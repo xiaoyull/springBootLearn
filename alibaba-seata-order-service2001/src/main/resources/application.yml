@@ -1,0 +1,30 @@
+server:
+  port: 2001
+spring:
+  application:
+    name: seata-order-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/db01?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: woyu1996
+    driver-class-name: org.gjt.mm.mysql.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #nacos地址，将服务注册到nacos中
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+        port: 8719
+    alibaba:
+      seata:
+        tx-service-group: yu_tx_group # seata配置全局的事务组
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.yu.springcloud.domain

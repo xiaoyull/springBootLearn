@@ -25,8 +25,9 @@
       <module>alibabacloud-provider-payment-9001</module>
       <module>alibabacloud-provider-payment-9002</module>
       <module>alibabacloud-consumer-order83</module>
-    <module>alibabacloud-config-client3377</module>
+      <module>alibabacloud-config-client3377</module>
       <module>alibabacloud-sentinel-server8401</module>
+      <module>alibaba-seata-order-service2001</module>
   </modules>
   <packaging>pom</packaging>
 
